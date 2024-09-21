@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#hangmanCanvas {
+    display: block;
+    margin: 20px auto;
+}
+
+#wordContainer {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.letter {
+    font-size: 24px;
+    margin: 0 5px;
+    border-bottom: 2px solid #333;
+    width: 30px;
+    text-align: center;
+}
+
+#lettersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.letter-button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 40px;
+}
+
+.letter-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#statusMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #d32f2f;
+}
+
+#restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restartButton:hover {
+    background-color: #d32f2f;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 300px;
+    }
+
+    #hangmanCanvas {
+        width: 150px;
+        height: 200px;
+    }
+}
